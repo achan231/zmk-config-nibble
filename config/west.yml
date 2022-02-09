@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: achan231
-      url-base: https://github.com/achan231
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
-    - name: zmk-alextesting
-      remote: achan231
+    - name: zmk
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
