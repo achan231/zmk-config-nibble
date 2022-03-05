@@ -31,9 +31,6 @@
 &rgb_ug RGB_TOG             &kp CLCK  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K   &kp L     &kp SEMI  &kp SQT             &kp RET  &kp HOME
 &mt C_AL_SCREEN_SAVER C_AL_CALC   &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M   &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp END
 &mt F15 C_AL_MUSIC 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE                     &mo 1   &kp RALT  &kp RGUI            &kp LEFT  &kp DOWN &kp RIGHT
-&rgb_ug RGB_TOG             &kp CLCK  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K   &kp L     &kp SEMI  &kp SQT             &kp RET  &kp PG_UP
-&mt F13 F20		    &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M   &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp PG_DN
-&kp C_AL_LOCK	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE                     &mo 1   &kp RALT  &kp RGUI            &kp LEFT  &kp DOWN &kp RIGHT
 			>;
 		};
 		function_layer {
