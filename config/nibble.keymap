@@ -12,17 +12,17 @@
 
 
 # Alex - Mod Tap delay
-
-&mt {
-    tapping-term-ms = <1000>;
-};
-
-/ {
-    keymap {
-        ...
-    };
-};
-
+/*
+ *&mt {
+ *   tapping-term-ms = <1000>;
+ *};
+ *
+ */ {
+ *   keymap {
+ *       ...
+ *   };
+ *};
+ */
 
 
 / {
