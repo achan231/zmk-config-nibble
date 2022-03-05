@@ -17,7 +17,18 @@
 		sensors = <&encoder_1>;
 	};
 
-	keymap {
+	
+
+
+
+
+
+&mt {
+    tapping-term-ms = <1000>;
+};
+
+/ {
+    keymap {
 		compatible = "zmk,keymap";
 
 		default_layer {
@@ -48,17 +59,5 @@
 		};
 	};
 };
-
-
-
-
-
-&mt {
-    tapping-term-ms = <1000>;
-};
-
-/ {
-    keymap {
-        ...
     }
 }
