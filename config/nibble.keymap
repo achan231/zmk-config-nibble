@@ -11,20 +11,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
-# Alex - Mod Tap delay
-/*
- *&mt {
- *   tapping-term-ms = <1000>;
- *};
- *
- */ {
- *   keymap {
- *       ...
- *   };
- *};
- */
-
-
 / {
 	sensors {
 		compatible = "zmk,keymap-sensors";
