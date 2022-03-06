@@ -25,7 +25,7 @@
 	};
 
     behaviors {
-        
+        // Left modifiers home/pgup
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
@@ -34,7 +34,7 @@
             mods = <(MOD_RGUI|MOD_LSFT)>;
         };
 
-
+        // Left modifiers end/pgdn
         mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
