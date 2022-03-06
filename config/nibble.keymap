@@ -25,7 +25,7 @@
     behaviors {
         gresc: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
-            label = "RSHIFT HOME TO PGUP";
+            label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <2>;
             bindings = <&kp END>, <&kp PG_UP>;
             mods = <(MOD_RSFT)>;
