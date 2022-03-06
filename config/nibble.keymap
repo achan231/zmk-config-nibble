@@ -29,19 +29,23 @@
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp PG_UP>, <&kp HOME>;
-            mods = <MOD_RSFT>, <MOD_RGUI>;
+            mods = <MOD_RGUI>;
         };
+
+*/
         // Right modifiers to end/pgdn
         mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp UP_DN>, <&kp END>;
-            mods = <MOD_RSFT>, <MOD_RGUI>;
+            mods = <MOD_RGUI>;
         };
-        
+ */
+ 
+ 
     };
 
 
