@@ -34,9 +34,9 @@
             mods = <(MOD_RSFT|MOD_RGUI)>;
         };
         
-        mmend: rshift_home_to_pgup {
+        mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
-            label = "RSHIFT_HOME_TO_PGUP";
+            label = "RSHIFT_HOME_TO_PGDN";
             #binding-cells = <0>;
             bindings = <&kp UP_DN>, <&kp END>;
             mods = <(MOD_RSFT|MOD_RGUI)>;
