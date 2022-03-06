@@ -35,7 +35,6 @@
         };
 
 
-        // Right modifiers to end/pgdn
         mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
