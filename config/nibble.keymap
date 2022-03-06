@@ -28,7 +28,7 @@
             label = "RSHIFT HOME TO PGUP";
             #binding-cells = <0>;
             bindings = <&kp END>, <&kp PG_UP>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RSHFT)>;
         };
     };
 
