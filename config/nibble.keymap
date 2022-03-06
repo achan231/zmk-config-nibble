@@ -25,7 +25,7 @@
 	};
 
     behaviors {
-    
+        // Right modifiers to home/pgup
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
@@ -33,7 +33,7 @@
             bindings = <&kp PG_UP>, <&kp HOME>;
             mods = <MOD_RSFT>, <MOD_RGUI>;
         };
-        
+        // Right modifiers to end/pgdn
         mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
