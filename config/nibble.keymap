@@ -31,7 +31,7 @@
             label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <0>;
             bindings = <&kp PG_UP>, <&kp HOME>;
-            mods = <(MOD_RSFT|MOD_RGUI)>;
+            mods = <MOD_RSFT>, <MOD_RGUI>;
         };
         
         mmend: rshift_home_to_pgdn {
@@ -39,7 +39,7 @@
             label = "RSHIFT_HOME_TO_PGDN";
             #binding-cells = <0>;
             bindings = <&kp UP_DN>, <&kp END>;
-            mods = <(MOD_RSFT|MOD_RGUI)>;
+            mods = <MOD_RSFT>, <MOD_RGUI>;
         };
         
     };
