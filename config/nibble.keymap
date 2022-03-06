@@ -11,7 +11,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
-//mod tap --> hold for 800ms/0.8sec
 &mt {
     tapping-term-ms = <800>;
 };
@@ -25,10 +24,8 @@
 		sensors = <&encoder_1>;
 	};
 
-
     behaviors {
-        
-        //mod morph page up / home
+    
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
@@ -37,7 +34,6 @@
             mods = <(MOD_RSFT|MOD_RGUI)>;
         };
         
-                //mod morph page down / end
         mmend: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
@@ -45,8 +41,6 @@
             bindings = <&kp UP_DN>, <&kp END>;
             mods = <(MOD_RSFT|MOD_RGUI)>;
         };
-        
-        
         
     };
 
