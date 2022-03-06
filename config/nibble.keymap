@@ -23,12 +23,12 @@
 
 
     behaviors {
-        gresc: grave_escape {
+        gresc: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "RSHIFT HOME TO PGUP";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            bindings = <&kp END>, <&kp PG_UP>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
