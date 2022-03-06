@@ -31,7 +31,7 @@
             label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <0>;
             bindings = <&kp PG_UP>, <&kp HOME>;
-            mods = <MOD_RGUI>;
+            mods = <(MOD_RGUI)>;
         };
 
 /*
