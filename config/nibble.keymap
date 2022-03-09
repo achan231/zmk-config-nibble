@@ -31,7 +31,7 @@
             label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp PG_UP>;
-            mods = <(MOD_RGUI|R_SFT)>;
+            mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 
         // Right modifiers end/pgdn
