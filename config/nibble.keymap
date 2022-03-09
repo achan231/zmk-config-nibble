@@ -25,22 +25,22 @@
 	};
 
     behaviors {
-        // Left modifiers home/pgup
+        // Right modifiers home/pgup
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <0>;
-            bindings = <&kp PG_UP>, <&kp HOME>;
-            mods = <(MOD_RGUI)>;
+            bindings = <&kp HOME>, <&kp PG_UP>;
+            mods = <(MOD_RGUI|R_SFT)>;
         };
 
-        // Left modifiers end/pgdn
+        // Right modifiers end/pgdn
         mmend: rshift_home_to_pgdn {
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
             #binding-cells = <0>;
-            bindings = <&kp PG_DN>, <&kp END>;
-            mods = <(MOD_RGUI|MOD_LSFT)>;
+            bindings = <&kp END>, <&kp PG_UP>;
+            mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 
  
