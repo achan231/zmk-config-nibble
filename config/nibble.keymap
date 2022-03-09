@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGUP";
             #binding-cells = <0>;
-            bindings = <&kp PG_UP>, <&kp HOME>;
+            bindings = <&kp HOME>, <&kp PG_UP>;
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
             #binding-cells = <0>;
-            bindings = <&kp PG_DN>, <&kp END>;
+            bindings = <&kp END>, <&kp PG_DN>;
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
         
