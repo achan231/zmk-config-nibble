@@ -60,18 +60,6 @@
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 	
-	   // blach Right modifiers end/pgdn
-        mmralt: ralt_mission_control {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RALT_MISSION_CONTROL";
-            #binding-cells = <0>;
-	    flavor = "hold-preferred";
-	    tapping-term-ms = <400>;
-	    quick-tap-ms= = <200>
-            bindings = <&mt RALT>, <&kp F14>;
-       	    hold-trigger-key-positions = <1>
-        };
-
 
 
  
@@ -92,7 +80,7 @@
 &kp C_MUTE  	            &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O      &kp P      &kp LBKT    &kp RBKT    &kp BSLH   &kp TILDE
 &rgb_ug RGB_TOG             &kp CLCK  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L      &kp SEMI   &kp SQT                 &kp RET    &mmhome
 &mt F13 C_AL_CALC           &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT   &kp UP     &mmend 
-&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE             &kp RGUI  &mo 1      &mmraltmc                 &kp LEFT    &kp DOWN   &kp RIGHT
+&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE             &kp RGUI  &mo 1      &mt F14 LALT                 &kp LEFT    &kp DOWN   &kp RIGHT
 			>;
 		};
 		function_layer {
