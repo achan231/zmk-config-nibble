@@ -61,13 +61,20 @@
         };
 	
 	   // blach Right modifiers end/pgdn
-        mmraltmc: ralt_mission_control {
-            compatible = "zmk,behavior-mod-morph";
+        mmralt: ralt_mission_control {
+            compatible = "zmk,behavior-hold-tap";
             label = "RALT_MISSION_CONTROL";
             #binding-cells = <0>;
+	    flavor = "hold-preferred";
+	    tapping-term-ms = <400>;
+	    quick-tap-ms= = <200>
             bindings = <&mt RALT>, <&kp F14>;
-            mods = <MOD_RALT>;
+       	    hold-trigger-key-positions = <1>
         };
+
+
+
+
 
 /*
  *	// Mission control thing
