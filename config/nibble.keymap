@@ -26,7 +26,7 @@
 
 
 &mt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <400>;
 };
 
 
@@ -39,6 +39,9 @@
 	};
 
     behaviors {
+    
+    		//Mod Morph
+    
         // Right modifiers home/pgup
         mmhome: rshift_home_to_pgup {
             compatible = "zmk,behavior-mod-morph";
@@ -56,17 +59,27 @@
             bindings = <&kp END>, <&kp PG_UP>;
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
-
-	// Mission control thing
-	raltmc: ralt_mission_control {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RALT_MISSION_CONTROL";
-            #binding-cells = <2>;
-            tapping_term_ms = <400>;
-            quick_tap_ms = <200>;
-            flavor = "tap-preferred";
+	
+	   // blach Right modifiers end/pgdn
+        mmraltmc: ralt_mission_control {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RSHIFT_HOME_TO_PGDN";
+            #binding-cells = <0>;
             bindings = <&mt RALT>, <&kp F14>;
+            mods = <(MOD_RALT)>;
+        };
 
+/*
+ *	// Mission control thing
+ *	raltmc: ralt_mission_control {
+ *            compatible = "zmk,behavior-hold-tap";
+ *            label = "RALT_MISSION_CONTROL";
+ *            #binding-cells = <0>;
+ *            tapping_term_ms = <400>;
+ *            quick_tap_ms = <200>;
+ *            flavor = "tap-preferred";
+ *            bindings = <&mt RALT>, <&kp F14>;
+ */
  
  
     };
@@ -85,8 +98,8 @@
                             &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp MINUS   &kp EQUAL   &kp BSPC   &kp DEL
 &kp C_MUTE  	            &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O      &kp P      &kp LBKT    &kp RBKT    &kp BSLH   &kp TILDE
 &rgb_ug RGB_TOG             &kp CLCK  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L      &kp SEMI   &kp SQT                 &kp RET    &mmhome
-&mt F13 C_AL_CALC           &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT   &kp UP     &mmend
-&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE             &kp RGUI  &mo 1      &raltmc                &kp LEFT    &kp DOWN   &kp RIGHT
+&mt F13 C_AL_CALC           &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT   &kp UP     &mmend 
+&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE             &kp RGUI  &mo 1      &mmraltmc                 &kp LEFT    &kp DOWN   &kp RIGHT
 			>;
 		};
 		function_layer {
