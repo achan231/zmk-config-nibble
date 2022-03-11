@@ -74,20 +74,6 @@
 
 
 
-
-
-/*
- *	// Mission control thing
- *	raltmc: ralt_mission_control {
- *            compatible = "zmk,behavior-hold-tap";
- *            label = "RALT_MISSION_CONTROL";
- *            #binding-cells = <0>;
- *            tapping_term_ms = <400>;
- *            quick_tap_ms = <200>;
- *            flavor = "tap-preferred";
- *            bindings = <&mt RALT>, <&kp F14>;
- */
- 
  
     };
 
