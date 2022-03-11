@@ -29,9 +29,7 @@
     tapping-term-ms = <800>;
 };
 
-&nt {
-    tapping-term-ms = <300>;
-};
+
 
 
 / {
@@ -59,6 +57,15 @@
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 
+	// Mission control thing
+	raltmc: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RALT_MISSION_CONTROL";
+            #binding-cells = <2>;
+            tapping_term_ms = <400>;
+            quick_tap_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mt RALT>, <&kp F14>;
 
  
  
@@ -79,7 +86,7 @@
 &kp C_MUTE  	            &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O      &kp P      &kp LBKT    &kp RBKT    &kp BSLH   &kp TILDE
 &rgb_ug RGB_TOG             &kp CLCK  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L      &kp SEMI   &kp SQT                 &kp RET    &mmhome
 &mt F13 C_AL_CALC           &kp LSHFT &trans    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT   &kp UP     &mmend
-&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE                 &kp RGUI  &mo 1      &nt RALT F14                &kp LEFT    &kp DOWN   &kp RIGHT
+&mt F15 K_CMENU 	            &kp LCTRL &kp LALT  &kp LGUI                      &kp SPACE             &kp RGUI  &mo 1      &raltmc                &kp LEFT    &kp DOWN   &kp RIGHT
 			>;
 		};
 		function_layer {
@@ -163,5 +170,4 @@
 		};
 	};
 };
-
 
