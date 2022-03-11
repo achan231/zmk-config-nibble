@@ -58,7 +58,7 @@
         };
 
 	// Mission control thing
-	raltmc: auto_shift {
+	raltmc: ralt_mission_control {
             compatible = "zmk,behavior-hold-tap";
             label = "RALT_MISSION_CONTROL";
             #binding-cells = <2>;
