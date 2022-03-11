@@ -63,10 +63,10 @@
 	   // blach Right modifiers end/pgdn
         mmraltmc: ralt_mission_control {
             compatible = "zmk,behavior-mod-morph";
-            label = "RSHIFT_HOME_TO_PGDN";
+            label = "RALT_MISSION_CONTROL";
             #binding-cells = <0>;
             bindings = <&mt RALT>, <&kp F14>;
-            mods = <(MOD_RALT)>;
+            mods = <MOD_RALT>;
         };
 
 /*
