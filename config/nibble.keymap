@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RSHIFT_HOME_TO_PGDN";
             #binding-cells = <0>;
-            bindings = <&kp END>, <&kp PG_UP>;
+            bindings = <&kp END>, <&kp PG_DN>;
             mods = <(MOD_RGUI|MOD_RSFT)>;
         };
 	
